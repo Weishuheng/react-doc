@@ -1,0 +1,32 @@
+nav{ display: flex;}
+.logoBox, .userInfo{ display: inline-flex; align-items: center; height: 50px; line-height: 50px; border-bottom: 1px solid rgba(5, 5, 5, 0.06) }
+.logoBox{ width: 120px; }
+.userInfo{ font-size: 14px; color: #333; padding-right: 30px; }
+.userInfo a{ text-decoration: none;  margin: 0 15px 0 5px;  }
+.logo{ height: 35px; vertical-align: middle; }
+nav .ant-menu-overflow{ display: inline-flex; flex-grow: 1; }
+
+main{
+    padding: 30px;
+    position: relative;
+    min-height: calc(100vh - 150px);
+}
+
+
+footer {
+    text-align: center;
+    font-size: 13px;
+    line-height: 30px;
+    vertical-align: middle;
+}
+footer a { color : #000; }
+footer .icon_icp{
+      width: 14px;
+      height: 14px;
+      display: inline-block;
+      vertical-align: middle;
+      background-image: url("../assets/icp.png");
+      background-size: 100% 100%;
+      margin : 0 3px 0 10px;
+    }
+  

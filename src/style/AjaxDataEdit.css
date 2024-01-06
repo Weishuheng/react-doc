@@ -1,0 +1,11 @@
+:where(.css-dev-only-do-not-override-gzal6t).ant-btn:not(.ant-btn-icon-only)>.ant-btn-icon.ant-btn-loading-icon, :where(.css-dev-only-do-not-override-gzal6t).ant-btn:not(.ant-btn-icon-only)>.ant-btn-icon:not(:last-child).ant-btn-icon{margin-inline-end:3px;}
+/* :where(.css-dev-only-do-not-override-gzal6t).ant-btn{ margin-right: 7px;} */
+:where(.css-dev-only-do-not-override-gzal6t).ant-table-wrapper .ant-table{ font-size: 12px; }
+:where(.css-dev-only-do-not-override-gzal6t).ant-table-wrapper .ant-table-cell, :where(.css-dev-only-do-not-override-gzal6t).ant-table-wrapper .ant-table-thead>tr>th, :where(.css-dev-only-do-not-override-gzal6t).ant-table-wrapper .ant-table-tbody>tr>th, :where(.css-dev-only-do-not-override-gzal6t).ant-table-wrapper .ant-table-tbody>tr>td, :where(.css-dev-only-do-not-override-gzal6t).ant-table-wrapper tfoot>tr>th, :where(.css-dev-only-do-not-override-gzal6t).ant-table-wrapper tfoot>tr>td{ padding: 5px 8px; }
+:where(.css-dev-only-do-not-override-gzal6t).ant-btn.ant-btn-sm{ font-size: 12px; }
+:where(.css-dev-only-do-not-override-gzal6t).ant-switch{}
+:where(.css-dev-only-do-not-override-gzal6t).ant-switch.ant-switch-checked{background:#ff8104; }
+:where(.css-dev-only-do-not-override-gzal6t).ant-switch.ant-switch-checked:hover:not(.ant-switch-disabled){ background:#ff9a35 }
+:where(.css-dev-only-do-not-override-gzal6t).ant-switch .ant-switch-inner .ant-switch-inner-checked{ color: #fff;}
+.icon_add{ font-size: 18px; }
+.icon_add:hover { color: #1890ff; }

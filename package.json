@@ -3,18 +3,40 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ant-design/icons": "^5.2.6",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "ace-builds": "^1.32.3",
+    "antd": "^5.12.5",
+    "axios": "^1.6.2",
+    "babel-runtime": "^6.26.0",
+    "element-react": "^1.4.34",
+    "element-theme-default": "^1.4.13",
+    "i18next": "^23.7.13",
+    "i18next-browser-languagedetector": "^7.2.0",
+    "monaco-editor": "^0.44.0",
     "react": "^18.2.0",
+    "react-ace": "^10.1.0",
     "react-dom": "^18.2.0",
+    "react-hot-loader": "^4.5.3",
+    "react-i18next": "^14.0.0",
+    "react-json-editor-ajrm": "^2.5.14",
+    "react-json-editor-viewer": "^1.0.7",
+    "react-monaco-editor": "^0.55.0",
+    "react-router-dom": "^6.21.1",
     "react-scripts": "5.0.1",
+    "react-syntax-highlighter": "^15.5.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "env-cmd -f .env.development react-scripts start",
+    "debug-test": "env-cmd -f .env.test react-scripts start",
+    "debug-production":"env-cmd -f .env.production react-scripts start",
+    "test": "env-cmd -f .env.test react-scripts build",
+    "production": "env-cmd -f .env.production react-scripts build",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "etest": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -34,5 +56,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/runtime": "^7.23.6",
+    "env-cmd": "^10.1.0"
   }
 }

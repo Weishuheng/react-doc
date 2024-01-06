@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# 1、安装全局的react-create-app 
+```javascript
+    //  "react": "^18.2.0" 
+    npm install react-create-app -g -s
+```
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 2、安装项目doc
+```javascript
+    npx create-react-app doc
+```
+# 3、进入项目，安装需要依赖的三方组件
+```javascript
+    // 进入项目
+    cd doc
+    // antd antd icon 框架UI
+    // "@ant-design/icons": "^5.2.6",
+    // "antd": "^5.12.5",
+    npm install antd @ant-design/icons -s
+    // ajax数据设置
+    // "axios": "^1.6.2",
+    npm install axios -s
+    // 路由设置
+    // "react-router-dom": "^6.21.1",
+    npm install react-router-dom -s
+    // 根据环境设置变量
+    // "env-cmd": "^10.1.0"
+    npm install env-cmd -s
+    // 多语言支持
+    // "react-i18next": "^14.0.0",
+    // "i18next-browser-languagedetector": "^7.2.0",
+    npm install react-i18next i18next-browser-languagedetector -s
+    // 代码编辑框
+    // "react-ace": "^10.1.0",
+    // "ace-builds": "^1.32.3",
+    npm install react-ace ace-builds -s
+    // 代码高亮显示
+    //"react-syntax-highlighter": "^15.5.0",
+    npm install react-syntax-highlighter -s
+```
 
-## Available Scripts
+# 4、将需要的文件下载并覆盖项目文件
+    ** public 文件夹不动 **
+    ** src 文件夹删除项目原有的，使用github里面的 **
+    ** 创建3个环境变量的文件  **
+        .env.development        生产环境
+        .env.test               测试环境
+        .env.production         线上环境
+        存放不同环境下的api请求地址
+        <!-- REACT_APP_API_URL=http://localhost.api.mysite.com -->
 
-In the project directory, you can run:
+# 5、修改package.json的scripts
+```javascript
+    "scripts": {
+        "start": "env-cmd -f .env.development react-scripts start",
+        "debug-test": "env-cmd -f .env.test react-scripts start",
+        "debug-production":"env-cmd -f .env.production react-scripts start",
+        "test": "env-cmd -f .env.test react-scripts build",
+        "production": "env-cmd -f .env.production react-scripts build",
+        "build": "react-scripts build",
+        "etest": "react-scripts test",
+        "eject": "react-scripts eject"
+    }
+    /**
+     * npm start                本地开发环境，请求模拟数据
+     * npm run debug-test           本地开发环境，请求测试环境api数据
+     * npm run debug-production     本地开发环境，请求正式环境api数据
+     * npm run test                 打包测试环境
+     * npm run production           打包正式环境
+     */
+```
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  # 6、启动项目
+      npm start
