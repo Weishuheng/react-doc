@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^5.2.6",
+    "@element-plus/locale": "^0.0.5",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -30,14 +31,14 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "env-cmd -f .env.development react-scripts start",
-    "debug-test": "env-cmd -f .env.test react-scripts start",
-    "debug-production":"env-cmd -f .env.production react-scripts start",
-    "test": "env-cmd -f .env.test react-scripts build",
-    "production": "env-cmd -f .env.production react-scripts build",
-    "build": "react-scripts build",
-    "etest": "react-scripts test",
-    "eject": "react-scripts eject"
+      "local": "env-cmd -f .env.development react-scripts start",
+      "debug:test": "env-cmd -f .env.test react-scripts start",
+      "debug:production": "env-cmd -f .env.production react-scripts start",
+      "test": "env-cmd -f .env.test react-scripts build",
+      "production": "env-cmd -f .env.production react-scripts build",
+      "build": "react-scripts build",
+      "etest": "react-scripts test",
+      "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [

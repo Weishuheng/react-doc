@@ -51,9 +51,9 @@
 # 5、修改package.json的scripts
 ```javascript
     "scripts": {
-        "start": "env-cmd -f .env.development react-scripts start",
-        "debug-test": "env-cmd -f .env.test react-scripts start",
-        "debug-production":"env-cmd -f .env.production react-scripts start",
+        "local": "env-cmd -f .env.development react-scripts start",
+        "debug:test": "env-cmd -f .env.test react-scripts start",
+        "debug:production": "env-cmd -f .env.production react-scripts start",
         "test": "env-cmd -f .env.test react-scripts build",
         "production": "env-cmd -f .env.production react-scripts build",
         "build": "react-scripts build",
