@@ -61,7 +61,7 @@
         "eject": "react-scripts eject"
     }
     /**
-     * npm start                本地开发环境，请求模拟数据
+     * npm run local                本地开发环境，请求模拟数据
      * npm run debug-test           本地开发环境，请求测试环境api数据
      * npm run debug-production     本地开发环境，请求正式环境api数据
      * npm run test                 打包测试环境
@@ -70,4 +70,4 @@
 ```
 
   # 6、启动项目
-      npm start
+      npm run local
